@@ -1,0 +1,123 @@
+footer
+{
+    
+    .form-control{
+        height: 38px;
+        border-radius: 3px;
+    }
+    a {
+        color: #969696;
+    }
+    .list-inline.right-seperator li
+    {
+        padding-right: 15px;
+        
+        a{
+            position: relative;
+            text-transform: none;
+            word-wrap: break-word;
+            
+            font-weight: 400;
+            line-height: 30px;
+            &:after {
+                content: "";
+                border-right: solid 1px #969696;
+                position: absolute;
+                right: -10px;
+                height: 18px;
+                top: 1px;
+                left: 0;
+            }
+        }
+        &:last-child
+        {
+            a{
+                &:after{display: none;}
+            }
+        }
+    }
+    .footer-title
+    {
+        h6{    letter-spacing: 2px;}
+    }
+    .footer-link
+    {
+        ul{margin: 0px;
+    padding: 0px;
+        li{    list-style: none;}}
+    }
+}
+.footer-bottom
+{
+    border-top: solid 1px #dddddd;
+    a, span, span a, a i {
+        color: #777;
+    }
+}
+.image-bg:not(.light-bg)
+{
+    footer span, footer p, footer a {
+        color: #fff !important;
+    }
+    .footer-bottom
+    {
+        background-color: rgba(27, 27, 27, .50);
+        a, span, span a {
+            color: #fff !important;
+        }
+        position: inherit;
+    }
+
+}
+.footer-social a{
+    transition: all 0.35s;
+    &:hover{
+        transform: translate3d(0, -4px, 0);
+        -webkit-transform: translate3d(0, -4px, 0);
+    }
+}
+/*===========Footer 2==============*/
+.date{
+    @extend .lato-font;
+}
+.left-block{
+    float: left;
+}
+.overflow, .tweet, .tweet .col-4 {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.overflow .btn-link{ text-decoration: none;}
+/**********footer 2**********/
+.footer-link ul li a, ul.privacy-policy li a{ 
+    @extend .type-fine;
+    line-height: 34px;
+}
+.bg-light .footer-bottom{ 
+    background-color: #f8f9fa;
+}
+
+.bg-dark .footer-bottom{
+    border-color: #252525;
+}
+.image-bg .footer-bottom{
+    border-color: rgba(27, 27, 27, 0.1);
+}
+.bg-dark
+{
+    .footer-social a
+    { 
+        color: #fff;
+    }
+    #footer{ background-color: $light-color;
+    }
+
+} 
+
+#toTop{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: none;
+}
